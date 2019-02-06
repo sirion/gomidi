@@ -16,7 +16,7 @@ Turn your midi keyboard/controller into a macro keyboard.
 
 The program takes its configuration from ```~/.config.midimacro/config.json```
 
-Take a look at the [example configuration](/sirion/gomidi/blob/master/app/cmd/miDiMacro/config-example/config.json).
+Take a look at the [example configuration](/app/cmd/miDiMacro/config-example/config.json).
 
 _(Only tested with the Launchpad Mini)_
 
