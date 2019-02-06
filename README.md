@@ -5,7 +5,7 @@ gomidi is a go module that contains the following packages/programs:
 
 
 Path | Package
-- | -
+---- | ----
 app/cmd/miDiMacro | Turns a midi- into a macro-keyboard with configurable key combinations assigned to midi notes and controller keys
 lib/midi | package containing helper functions to create midi byte slices (midi commands)
 lib/launchpadmini | package containing the LaunchpadMini struct which contains functions to read from the midi controller and set its state (turn colored button lights on and off, send text)
