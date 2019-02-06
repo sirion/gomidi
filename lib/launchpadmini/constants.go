@@ -122,7 +122,7 @@ const (
 var textCmdPrefix = []byte{240, 0, 32, 41, 9}
 var textCmdSuffix = []byte{247}
 
-// ButtonNames is a pseudo-constant map to convert button name strings to the actual byte value
+// ButtonValues is a pseudo-constant map to convert button name strings to the actual byte value
 var ButtonValues = map[string]byte{
 	"LiveButton1": LiveButton1,
 	"LiveButton2": LiveButton2,
@@ -214,6 +214,7 @@ var ButtonValues = map[string]byte{
 	"ButtonH":  ButtonH,
 }
 
+// ButtonNames is a pseudo-constant map to convert button byte values into button name strings
 var ButtonNames = map[byte]string{
 	LiveButton1: "LiveButton1",
 	LiveButton2: "LiveButton2",
@@ -232,7 +233,7 @@ var ButtonNames = map[byte]string{
 	ButtonA6: "ButtonA6",
 	ButtonA7: "ButtonA7",
 	ButtonA8: "ButtonA8",
-	ButtonA:  " ButtonA",
+	ButtonA:  "ButtonA",
 
 	ButtonB1: "ButtonB1",
 	ButtonB2: "ButtonB2",
@@ -242,7 +243,7 @@ var ButtonNames = map[byte]string{
 	ButtonB6: "ButtonB6",
 	ButtonB7: "ButtonB7",
 	ButtonB8: "ButtonB8",
-	ButtonB:  " ButtonB",
+	ButtonB:  "ButtonB",
 
 	ButtonC1: "ButtonC1",
 	ButtonC2: "ButtonC2",
@@ -252,7 +253,7 @@ var ButtonNames = map[byte]string{
 	ButtonC6: "ButtonC6",
 	ButtonC7: "ButtonC7",
 	ButtonC8: "ButtonC8",
-	ButtonC:  " ButtonC",
+	ButtonC:  "ButtonC",
 
 	ButtonD1: "ButtonD1",
 	ButtonD2: "ButtonD2",
@@ -262,7 +263,7 @@ var ButtonNames = map[byte]string{
 	ButtonD6: "ButtonD6",
 	ButtonD7: "ButtonD7",
 	ButtonD8: "ButtonD8",
-	ButtonD:  " ButtonD",
+	ButtonD:  "ButtonD",
 
 	ButtonE1: "ButtonE1",
 	ButtonE2: "ButtonE2",
@@ -272,7 +273,7 @@ var ButtonNames = map[byte]string{
 	ButtonE6: "ButtonE6",
 	ButtonE7: "ButtonE7",
 	ButtonE8: "ButtonE8",
-	ButtonE:  " ButtonE",
+	ButtonE:  "ButtonE",
 
 	ButtonF1: "ButtonF1",
 	ButtonF2: "ButtonF2",
@@ -282,7 +283,7 @@ var ButtonNames = map[byte]string{
 	ButtonF6: "ButtonF6",
 	ButtonF7: "ButtonF7",
 	ButtonF8: "ButtonF8",
-	ButtonF:  " ButtonF",
+	ButtonF:  "ButtonF",
 
 	ButtonG1: "ButtonG1",
 	ButtonG2: "ButtonG2",
@@ -292,7 +293,7 @@ var ButtonNames = map[byte]string{
 	ButtonG6: "ButtonG6",
 	ButtonG7: "ButtonG7",
 	ButtonG8: "ButtonG8",
-	ButtonG:  " ButtonG",
+	ButtonG:  "ButtonG",
 
 	ButtonH1: "ButtonH1",
 	ButtonH2: "ButtonH2",
@@ -302,7 +303,7 @@ var ButtonNames = map[byte]string{
 	ButtonH6: "ButtonH6",
 	ButtonH7: "ButtonH7",
 	ButtonH8: "ButtonH8",
-	ButtonH:  " ButtonH",
+	ButtonH:  "ButtonH",
 }
 
 // ColorNames is a pseudo-constant map to convert color name strings to the actual byte value
@@ -325,6 +326,7 @@ var ColorNames = map[string]byte{
 	"ColorYellowFlashing": ColorYellowFlashing,
 }
 
+// ColorValues is a pseudo-constant map to convert color byte values to their name strings
 var ColorValues = map[byte]string{
 	ColorOff: "ColorOff",
 

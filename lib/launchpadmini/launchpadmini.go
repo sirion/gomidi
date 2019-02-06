@@ -3,14 +3,9 @@ package launchpadmini
 import (
 	"fmt"
 	"os"
-	// "miDiKey/internal/midi"
-)
 
-// KeyCombination describes the macro key combination and consists of one key and optional modifiers
-type KeyCombination struct {
-	Key       string   `json:"key"`
-	Modifiers []string `json:"modifiers,omitempty"`
-}
+	"github.com/sirion/gomidi/lib/midi"
+)
 
 // LaunchpadMini is the structure to connect to the Launchpad Mini midi device
 type LaunchpadMini struct {
@@ -38,25 +33,22 @@ func New(device string) *LaunchpadMini {
 // Button sets the given Button (from the Button* and LiveButton* constants) to the given color from the Color* constants
 func (l *LaunchpadMini) Button(button, color byte) {
 	if button < 204 {
-		l.fd.Write([]byte{144, button, color})
+		l.fd.Write(midi.NoteOn(0, button, color))
 	} else {
-		l.fd.Write([]byte{176, button - 100, color})
+		l.fd.Write(midi.Controller(0, button-100, color))
 	}
 	l.fd.Sync()
 }
 
 // Grid sets one of the grid buttons identified by its rown and column to the given color from the Color* constants
 func (l *LaunchpadMini) Grid(row, column, color byte) {
-	l.fd.Write([]byte{144, (16 * row) + column, color})
+	l.fd.Write(midi.NoteOn(0, (16*row)+column, color))
 	l.fd.Sync()
 }
 
 // Live sets one of the live buttons identified by its number or the LiveButton* constant to the given color from the Color* constants
 func (l *LaunchpadMini) Live(number, color byte) {
-	if number >= 204 {
-		number = number - 100
-	}
-	l.fd.Write([]byte{176, 104 + number, color})
+	l.fd.Write(midi.Controller(0, 104+number, color))
 	l.fd.Sync()
 }
 

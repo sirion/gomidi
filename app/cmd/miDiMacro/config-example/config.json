@@ -1,0 +1,535 @@
+{
+	"device": "auto",
+	"keyMacros": {
+	  "ButtonA": {
+		"key": "9",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB": {
+		"key": "h",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC": {
+		"key": "q",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD": {
+		"key": "z",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonE": {
+		"key": "num8",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonF": {
+		"key": "num7",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonG": {
+		"key": "num6",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonH": {
+		"key": "num5",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA1": {
+		"key": "1",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA2": {
+		"key": "2",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA3": {
+		"key": "3",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA4": {
+		"key": "4",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA5": {
+		"key": "5",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA6": {
+		"key": "6",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA7": {
+		"key": "7",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonA8": {
+		"key": "8",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB1": {
+		"key": "0",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB2": {
+		"key": "a",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB3": {
+		"key": "b",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB4": {
+		"key": "c",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB5": {
+		"key": "d",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB6": {
+		"key": "e",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB7": {
+		"key": "f",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonB8": {
+		"key": "g",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC1": {
+		"key": "i",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC2": {
+		"key": "j",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC3": {
+		"key": "k",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC4": {
+		"key": "l",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC5": {
+		"key": "m",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC6": {
+		"key": "n",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC7": {
+		"key": "o",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonC8": {
+		"key": "p",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD1": {
+		"key": "r",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD2": {
+		"key": "s",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD3": {
+		"key": "t",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD4": {
+		"key": "u",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD5": {
+		"key": "v",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD6": {
+		"key": "w",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD7": {
+		"key": "x",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonD8": {
+		"key": "y",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonE1": {
+		"key": "num0",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE2": {
+		"key": "num1",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE3": {
+		"key": "num2",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE4": {
+		"key": "num3",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE5": {
+		"key": "num4",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE6": {
+		"key": "num5",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE7": {
+		"key": "num6",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonE8": {
+		"key": "num7",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonF1": {
+		"key": "num9",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonF2": {
+		"key": "num0",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF3": {
+		"key": "num1",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF4": {
+		"key": "num2",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF5": {
+		"key": "num3",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF6": {
+		"key": "num4",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF7": {
+		"key": "num5",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonF8": {
+		"key": "num6",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonG1": {
+		"key": "num8",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonG2": {
+		"key": "num9",
+		"modifiers": [
+		  "alt"
+		]
+	  },
+	  "ButtonG3": {
+		"key": "num0",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonG4": {
+		"key": "num1",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonG5": {
+		"key": "num2",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonG6": {
+		"key": "num3",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonG7": {
+		"key": "num4",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonG8": {
+		"key": "num5",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonH1": {
+		"key": "num7",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonH2": {
+		"key": "num8",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonH3": {
+		"key": "num9",
+		"modifiers": [
+		  "ctrl"
+		]
+	  },
+	  "ButtonH4": {
+		"key": "num0",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonH5": {
+		"key": "num1",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonH6": {
+		"key": "num2",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonH7": {
+		"key": "num3",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "ButtonH8": {
+		"key": "num4",
+		"modifiers": [
+		  "ctrl",
+		  "cmd"
+		]
+	  },
+	  "LiveButton1": {
+		"key": "1",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton2": {
+		"key": "2",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton3": {
+		"key": "3",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton4": {
+		"key": "4",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton5": {
+		"key": "5",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton6": {
+		"key": "6",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton7": {
+		"key": "7",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  },
+	  "LiveButton8": {
+		"key": "8",
+		"modifiers": [
+		  "ctrl",
+		  "alt"
+		]
+	  }
+	}
+  }
