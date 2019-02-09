@@ -6,12 +6,9 @@ package main
  *    TODO: make sure this actually works every time
  *
  * TODOs:
- *  - Split into two tools: 1. Read and convert buttons. 2. Set button states from command line
  *
  *	- Support more than just Keyboard shortcuts (maybe mouse macros?)
- *  - Create documentation
  *  - Port to Windows :-/
- *
  *  - Port to / test on Mac :-/
  *
  */
@@ -23,10 +20,8 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"os/exec"
 	"os/user"
 	"path/filepath"
-	"strings"
 
 	lm "github.com/sirion/gomidi/lib/launchpadmini"
 
@@ -99,59 +94,14 @@ func (c *Configuration) Load() {
 		c.Device = *device
 	}
 
-	if c.Device == "" || c.Device == "auto" {
-		c.FindMidiDevice()
+	if c.Device == "" {
+		c.Device = "auto"
 	}
 
 	c.Macros = make(map[byte]KeyCombination, len(c.KeyMacros))
 	for key, combo := range c.KeyMacros {
 		c.Macros[lm.ButtonValues[key]] = combo
 	}
-}
-
-func (c *Configuration) FindMidiDevice() {
-	cmd := exec.Command("amidi", "-l")
-	stdout, err := cmd.Output()
-	if err != nil {
-		log.Fatalf("Error listing USB devices: %s", err.Error())
-	}
-
-	list := strings.Split(string(stdout), "\n")
-
-	if len(list) < 2 {
-		log.Fatalf("Error finding USB device. %d devices found", len(list)-1)
-	}
-
-	var info string
-	for _, line := range list {
-		if strings.Contains(line, "Launchpad Mini") {
-			info = line
-			break
-		}
-	}
-
-	if info == "" {
-		log.Fatalf("Error finding USB device. Found %d midi devices. No Launchpad Mini", len(list)-1)
-	}
-
-	parts := strings.Split(info, " ")
-	i := 0
-	for _, str := range parts {
-		if str != "" {
-			i++
-		}
-		if i == 2 {
-			info = str
-			break
-		}
-	}
-
-	parts = strings.Split(info[3:], ",")
-
-	if len(parts) != 3 {
-		log.Fatalf("Error parsing amidi list. hw-String did not contain three numbers: \"%s\"", info[3:])
-	}
-	c.Device = "/dev/snd/midiC" + parts[0] + "D" + parts[1]
 }
 
 func main() {

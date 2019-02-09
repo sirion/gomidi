@@ -2,6 +2,16 @@ package launchpadmini
 
 // Colors supported by the LaunchPad Mini
 const (
+	// Bits in the color byte:
+	//  1: always 0 -> data byte
+	//  2: always 0
+	//  3: green
+	//  4: green
+	//  5: clear    -> 1 for normal use
+	//  6: copy     -> 1 for normal use
+	//  7: red
+	//  8: red
+
 	ColorOff byte = 12
 
 	ColorRedLow      byte = 13
@@ -112,6 +122,19 @@ const (
 	ButtonH7 byte = 118
 	ButtonH8 byte = 119
 	ButtonH  byte = 120
+)
+
+// BufferMode constants for the most useful buffer modes.
+const (
+	BufferModeSimple = 0x20
+	BufferMode0      = 0x24
+	BufferMode1      = 0x21
+
+	BufferMode0Copy = 0x34
+	BufferMode1Copy = 0x31
+
+	BufferModeFlash   = 0x28
+	BufferModeDefault = 0x30
 )
 
 /**
